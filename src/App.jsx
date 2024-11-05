@@ -28,8 +28,8 @@ function Home() {
       <p>Select one of the following:</p>
       <nav>
         <ul>
-          <li><Link to="/next">After Number</Link></li>
-          <li><Link to="/previous">Before Number</Link></li>
+          <li><Link to="/after">After Number</Link></li>
+          <li><Link to="/before">Before Number</Link></li>
           <li><Link to="/between">Between Numbers</Link></li>
         </ul>
       </nav>
