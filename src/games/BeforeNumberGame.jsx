@@ -24,15 +24,19 @@ function BeforeNumberGame() {
   return (
     <div>
       <h2>Before Number Game</h2>
-      <input
-        type="number"
-        value={inputValue}
-        onChange={(e) => setInputValue(e.target.value)}
-        placeholder="Previous number?"
-        className="wide-input"
-      />
-      <div className="number">{currentNumber}</div>
-      <button onClick={checkAnswer}>Check</button>
+      <div className="number">
+        <input
+          type="number"
+          value={inputValue}
+          onChange={(e) => setInputValue(e.target.value)}
+          placeholder="Before"
+          className="wide-input"
+        />
+        {currentNumber}
+      </div>
+      <div>
+        <button onClick={checkAnswer} className="check-button">Check</button>
+      </div>
       {result && (
         <ResultDisplay result={result} onNext={resetGame} />
       )}

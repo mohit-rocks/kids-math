@@ -13,7 +13,7 @@ function ResultDisplay({ result, onNext }) {
         className="kitten"
       />
       <div>
-        <button onClick={onNext}>Next</button>
+        <button onClick={onNext} className="clear-button">Clear</button>
       </div>
     </div>
   );

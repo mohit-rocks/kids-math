@@ -24,15 +24,18 @@ function AfterNumberGame() {
   return (
     <div>
       <h2>After Number Game</h2>
-      <div className="number">{currentNumber}</div>
-      <input
-        type="number"
-        value={inputValue}
-        onChange={(e) => setInputValue(e.target.value)}
-        placeholder="Next number?"
-        className="wide-input"
-      />
-      <button onClick={checkAnswer}>Check</button>
+      <div className="number">{currentNumber}
+        <input
+          type="number"
+          value={inputValue}
+          onChange={(e) => setInputValue(e.target.value)}
+          placeholder="After"
+          className="wide-input"
+        />
+      </div>
+      <div>
+        <button onClick={checkAnswer} className="check-button">Check</button>
+      </div>
       {result && (
         <ResultDisplay result={result} onNext={resetGame} />
       )}

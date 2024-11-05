@@ -22,6 +22,9 @@
   width: 100px;
   text-align: center;
 }
+input::placeholder {
+  font-size: 40px;
+}
 .result {
   margin-top: 20px;
 }
@@ -50,4 +53,16 @@
 .message {
   font-size: 40px;
   margin-bottom: 10px;
+}
+
+.clear-button {
+  padding: 15px;
+  width: 130px;
+  font-weight: bold;
+  background: purple;
+  font-size: 24px;
+}
+
+.check-button {
+  margin-top: 15px;
 }

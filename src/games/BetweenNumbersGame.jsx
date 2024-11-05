@@ -31,11 +31,13 @@ function BetweenNumbersGame() {
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
           className="wide-input"
+          required
         />
         {startNumber + 2}
       </div>
-
-      <button onClick={checkAnswer}>Check</button>
+      <div>
+        <button onClick={checkAnswer} className="check-button">Check</button>
+      </div>
       {result && (
         <ResultDisplay result={result} onNext={resetGame} />
       )}
