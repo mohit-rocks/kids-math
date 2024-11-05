@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import getRandomNumber from "../math/math.jsx";
 import ResultDisplay from "./ResultDisplay.jsx";
 
-function NextNumberGame() {
+function AfterNumberGame() {
   const [currentNumber, setCurrentNumber] = useState(getRandomNumber);
   const [inputValue, setInputValue] = useState('');
   const [result, setResult] = useState(null);
@@ -23,7 +23,7 @@ function NextNumberGame() {
 
   return (
     <div>
-      <h2>Next Number Game</h2>
+      <h2>After Number Game</h2>
       <div className="number">{currentNumber}</div>
       <input
         type="number"
@@ -40,4 +40,4 @@ function NextNumberGame() {
   );
 }
 
-export default NextNumberGame;
+export default AfterNumberGame;
